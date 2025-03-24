@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMA SEKHAR K.PORTFOLIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Kings&family=Ovo&family=Playball&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-Kalnia leading-8 dark:bg-darkTheme
+dark:text-white">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]
+    dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <!-- ------------------------------------nav----------------------- -->
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <i class="fa-solid fa-user-tie"></i>
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 
+        rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-ovo
+        dark:border dark:border-white/50 dark:bg-transparent
+        ">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#bottomm"></a>Contact</li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button onclick="toggleTheme()">
+                <img src="./images/moon1.png" alt=" Moon" class="w-6 dark:hidden">
+                <img src="./images/sun.png" alt=" Moon" class="w-6 hidden dark:block">
+
+            </button>
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 
+                border border-gray-500 rounded-full ml-3 font-ovo dark:bg-white/50 ">
+                Hire Me
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./images/menu.png" alt="" class="w-6 dark:hidden">
+                <img src="./images/menu_white.png" alt="" class="w-6 hidden dark:block">
+            </button>
+
+        </div>
+        <!-- ------------------------------------Mobile menu----------------------- -->
+
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0
+w-64 z-50 h-screen bg-rose-50 transition duration-500 font-playBall
+ dark:bg-[#2a004a] dark:text-white">
+
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+
+                <img src="images/close_menu.png" alt="" class="w-5 
+                cursor-pointer dark:hidden">
+                <img src="images/white cross.png" alt="" class="w-5 
+                cursor-pointer hidden dark:block">
+
+            </div>
+
+
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#project" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#bottomm" onclick="closeMenu()"></a>Contact</li>
+        </ul>
+
+    </nav>
+
+
+    <!-- ------------------------------------Header----------------------- -->
+
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col 
+ justify-center items-center gap-4">
+        <img src="images/profile-pic.png" alt="" class="rounded-full w-32">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-kings">Hi! I'm SOMASEKHAR K.</h3>
+        <!-- </h3><img src="images/haiii.jpeg" alt=""> -->
+        <h1 class="text-3xl sm:text-6xl lg:text-[100%]"></h1>
+        <p class="max-w-2xl mx-auto"> Highly motivated and detail-oriented software developer with experience in Python,
+            SQL, and web development.
+            Proven track record of delivering high-quality solutions and improving operational efficiency.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border
+         rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20]
+         text-white flex items-center gap-2 dark:border-transparent">Hire Me </a>
+
+            <a href="images/SOMASEKHAR,pdf.pdf" download class="px-10 py-3 border 
+         rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"> My Resume
+                <img src="images/download a.png" alt="" class="w-4"></a>
+        </div>
+    </div>
+
+    <!-- ------------------------------------About----------------------- -->
+
+    <div class="w-full px-[12%] py-10 scroll-mt-20" id="about">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-5xl">About me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="images/pic.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl font-ovo">
+                    Hi! I'm a passionate frontend developer with a keen eye for design and detail. I specialize in
+                    building responsive, user-friendly websites using HTML, CSS (TailwindCSS), and JavaScript. My goal
+                    is to create seamless digital experiences that are both visually appealing and highly functional. I
+                    have worked on projects like a portfolio website and a responsive ice cream webpage, showcasing my
+                    ability to craft modern and efficient web interfaces. I'm always eager to learn new technologies and
+                    enhance my skills in web development. When I'm not coding, I love to travel and explore new places,
+                    which inspires my creativity. I'm looking forward to collaborating on exciting projects and growing
+                    as a developer!
+                </p>
+
+                <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl ">
+                    <li class="border-[0.5px]  border-gray-400 rounded-xl p-6 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+                dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50
+
+                ">
+                        <img src="images/code.png" alt="" class="w-7 
+                        mt-3 dark:hidden">
+                        <img src="images/codew.png" alt="" class="w-7 
+                        mt-3 hidden dark:block">
+
+                        <h3 class="my-4 font-semibold text-gray-700 fontplayBall
+                        dark:text-white">Languages</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">
+                            HTML, CSS, JavaScript,TailwindCss
+                            Bootstrap,
+                            Django,SQL,,Python </p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+                dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50
+                ">
+                        <img src="images/edu2.png" alt="" class="w-7 
+                        mt-3 dark:hidden">
+                        <img src="images/edu_white.png" alt="" class="w-7 mt-3
+                        hidden dark:block">
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80"> B.sc Science
+                          (SK University)  </p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+                dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50
+
+                ">
+                        <img src="images/project.png" alt="" class="w-7 mt-3
+                        dark:hidden">
+                        <img src="images/projectwhite.png" alt="" class="w-7 mt-3
+                        hidden dark:block">
+
+                        <h3 class="my-4 font-semibold dark:text-white text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Build more than 5 projects</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------project----------------------- -->
+    <div id="project" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+        <h2 class="text-center text-5xl font-Kalnia">Projects</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
+            Welcome to my Portfolio! Explore a collection of projects showcasing my expertise in
+            Java full-stack development.
+        </p>
+
+        <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
+
+            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+                style="background-image: url('icons/ICE\ 4.jpg');">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+                    flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                    <div>
+                        <h3 class="font-semibold">ICE-Cream WEB-PAGE</h3>
+                        <p></p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex
+                    items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <a href="https://ice-cream-website-tailwind.netlify.app/">   <img src="images/arrow.png" alt="" class="w-5"></a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+                style="background-image: url('images/PORTFOLIO.png');">
+
+                <div class="bg-orange-300 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+                    flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                    <div>
+                        <h3 class="text-lg font-semibold">Portfolio</h3>
+                        <p></p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex
+                    items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <a href="https://somasekhar-portfolio.netlify.app/">   <img src="images/arrow.png" alt="" class="w-5"> </a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+                style="background-image: url('./images/Burger.png');">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+                flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                    <div>
+                        <h3 class="text-lg font-semibold">Burger-page</h3>
+                        <p></p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex
+                items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="images/arrow.png" alt="" class="w-5">
+                    </div>
+                </div>
+
+            </div>
+            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+                style="background-image: url('images/SIGNIN.jpg');">
+
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+            flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                    <div>
+                        <h3 class="text-lg font-semibold">Signin</h3>
+                        <p></p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex
+            items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="images/arrow.png" alt="" class="w-5">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700
+        border-[0.5px] border-[#ebf4f5] rounded-full py-3 px-10 mx-auto my-20 
+        hover:bg-[#c5f9d7] duration-500 
+        dark:text-white dark:border-white dark:hover:bg-[#2a004a]">
+            Show more
+            <img src="images/arrow bold.png" alt="" class="w-4 dark:hidden">
+            <img src="images/arrowwhite.png" alt="" class="w-4 hidden dark:block"></a>
+    </div>
+
+
+    <!-- ------------------------------------contact----------------------- -->
+
+    <div id="bottomm" class="mt-20">
+        <div class="text-center">
+            <img src="" alt="" class="w-36 mx-auto mb-2">
+            <div class="w-max flex items-center gap-2 mx-auto hover:text-[#3f9469]">
+                <img src="images/mail.png" alt="" class="w-6">
+                <a href="mailto:somasekharkasipogula@gmail.com">somasekharkasipogula@gmail.com</a>
+                <!-- harshaharsha0040@gmail.com -->
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-b border-gray-400 mx-[10%] my-12 py-6
+       
+        ">
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0 ">
+                <div class="w-max flex items-center gap-2 mx-auto">
+                    <img src="images/LINK.png" alt="" class="w-6 dark:hidden">
+                    <img src="images/Linkidn.png" alt="" class="w-6 dark:block hidden">
+                    <li><a href="https://www.linkedin.com/in/somasekharkasipogula/"
+                            class="hover:text-green-500">Linkedin</a></li>
+                </div>
+
+                <div class="w-max flex items-center gap-2 mx-auto">
+                    <img src="images/phone2.png" alt="" class="w-6 dark:hidden">
+                    <img src="images/phone.png" alt="" class="w-6 dark:block hidden">
+                    <li><a href="tel:+91 8978303169" class="hover:text-green-500">Call Me</a></li>
+                </div>
+
+                <div class="w-max flex items-center gap-2 mx-auto">
+                    <img src="images/git.png" alt="" class="w-6 dark:hidden">
+                    <img src="images/Github.png" alt="" class="w-6 dark:block hidden">
+                    <li><a href="https://github.com/somasekharkasipogula133" class="hover:text-green-600">Github</a>
+                    </li>
+                </div>
+                <div class="w-max flex items-center gap-2 mx-auto">
+                    <img src="images/insta.png" alt="" class="w-6 dark:hidden">
+                    <img src="images/Instagram.png" alt="" class="w-6 dark:block hidden">
+                    <li><a href="https://www.instagram.com/in/crazy_idiot133/" class="hover:text-green-600">Instagram</a>
+                    </li>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
